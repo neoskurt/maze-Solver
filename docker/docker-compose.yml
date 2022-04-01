@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  labyrinth-solver:
+    container_name: labyrinth-solver
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
