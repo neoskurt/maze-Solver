@@ -17,9 +17,3 @@
  # or
  $ npm run dev
 ```
-
-<style>
-    img {
-        height: 300px;
-    }
-</style>
