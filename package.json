@@ -1,5 +1,5 @@
 {
-    "name": "labyrinth-solver",
+    "name": "Maze-Solver",
     "description": "A program that automatically solve labyrinths",
     "version": "1.0.0",
     "main": "index.js",
