@@ -1,5 +1,5 @@
 {
-    "name": "Maze-Solver",
+    "name": "maze-solver",
     "description": "A program that automatically solve labyrinths",
     "version": "1.0.0",
     "main": "index.js",
@@ -9,8 +9,7 @@
         "build": "tsc && shx cp -r src/res dist/res",
         "start": "node dist/index.js",
         "dev": "nodemon",
-        "docker": "docker-compose -f docker/docker-compose.yml up -d",
-        "docker:build": "docker-compose -f docker/docker-compose.yml up -d --build"
+        "docker": "docker-compose -f docker/docker-compose.yml up -d --build"
     },
     "devDependencies": {
         "@types/node": "^17.0.23",
@@ -32,8 +31,5 @@
         ],
         "exec": "node -r tsconfig-paths/register -r ts-node/register ./src/index.ts",
         "ext": "ts, js, map"
-    },
-    "dependencies": {
-        "yarn": "^1.22.18"
     }
 }
