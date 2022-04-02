@@ -126,9 +126,14 @@ export class Cell {
             case "START": color = 1; break;
             case "END": color = 2; break;
             case "PATH": color = 5; break;
+            default: return "  ";
         }
 
-        return "\u001b[3" + color + (bright ? ';1' : '') + "m" + (process.env.NODE_ENV === 'production' ? 'OO' : "██") + "\u001b[0m";
+        if (process.env.NODE_ENV === 'production') {
+            return "\u001b[3" + color + (bright ? ';1' : '') + "m" + "OO" + "\u001b[0m";
+        }
+
+        return "\u001b[3" + color + (bright ? ';1' : '') + "m" + "██" + "\u001b[0m";
     }
 }
 
